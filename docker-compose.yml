@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    ports:
+      - 5000:5000
+    volumes:
+      - ./app.py:/app/app.py
+      - ./static/css:/app/static/css
+      - ./static/js:/app/static/js
+    #   - ./tmp/data/games:/app/static/games
