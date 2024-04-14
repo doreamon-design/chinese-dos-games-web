@@ -14,7 +14,7 @@ WORKDIR /app
 COPY . .
 
 # Move Games Tools + Data to static
-RUN rm -rf /app/static/games && mv /app/games-tools /app/static/games
+# RUN rm -rf /app/static/games && mv /app/games-tools /app/static/games
 
 EXPOSE 5000
 
