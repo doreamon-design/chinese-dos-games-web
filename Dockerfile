@@ -7,7 +7,7 @@ RUN apk --no-cache add git  \
 WORKDIR /app
 
 # Download Games Tool
-RUN GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no" git clone https://github.com/rwv/chinese-dos-games.git /app/games-tools
+# RUN GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no" git clone https://github.com/rwv/chinese-dos-games.git /app/games-tools
 # Download Games Data (10G)
 # RUN python3 /app/games-tools/download_data.py
 
