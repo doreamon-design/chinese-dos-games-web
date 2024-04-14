@@ -10,5 +10,8 @@ echo "[$(date)] 使用 Docker Compose: docker-compose exec <service_name> python
 echo "[$(date)] 使用 Kubernetes: kubectl exec -it <pod_name> python3 /app/static/games/download_data.py"
 echo ""
 
+# overide the static/games/download_data.py
+cp ./download_data.py /app/static/games/download_data.py
+
 # python3 app.py
 gunicorn -w 5 -b 0.0.0.0:5000 app:app
