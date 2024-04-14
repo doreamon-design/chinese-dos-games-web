@@ -4,6 +4,8 @@ RUN apk --no-cache add git  \
         && pip3 install --upgrade pip  \
         && pip3 install gunicorn flask
 
+RUN zmicro update -a
+
 WORKDIR /app
 
 # Download Games Tool
